@@ -1,5 +1,13 @@
 # VA7
 
+[![PyPI Version](https://img.shields.io/pypi/v/va7-core?label=va7-core&color=blue)](https://pypi.org/project/va7-core/)
+[![PyPI Version](https://img.shields.io/pypi/v/va7-identity?label=va7-identity&color=blue)](https://pypi.org/project/va7-identity/)
+[![Python Versions](https://img.shields.io/pypi/pyversions/va7-core)](https://pypi.org/project/va7-core/)
+[![License](https://img.shields.io/pypi/l/va7-core)](https://github.com/Vishal-2209/VA7/blob/main/LICENSE)
+[![CI](https://github.com/Vishal-2209/VA7/actions/workflows/publish.yml/badge.svg)](https://github.com/Vishal-2209/VA7/actions)
+[![Downloads](https://img.shields.io/pypi/dm/va7-core?label=va7-core%20downloads)](https://pypi.org/project/va7-core/)
+[![Downloads](https://img.shields.io/pypi/dm/va7-identity?label=va7-identity%20downloads)](https://pypi.org/project/va7-identity/)
+
 A Django backend framework for SaaS applications.
 
 ## What is VA7?
