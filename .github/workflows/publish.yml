@@ -8,10 +8,8 @@ on:
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
-    environment: pypi
     permissions:
       contents: read
-      id-token: write
     steps:
       - uses: actions/checkout@v4
 
@@ -31,12 +29,14 @@ jobs:
         run: python -m hatchling build --target wheel
         working-directory: packages/va7-identity
 
-      - name: Publish va7-core to PyPI
+      - name: Publish va7-core
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           packages-dir: packages/va7-core/dist/
+          password: ${{ secrets.PYPI_API_TOKEN }}
 
-      - name: Publish va7-identity to PyPI
+      - name: Publish va7-identity
         uses: pypa/gh-action-pypi-publish@release/v1
         with:
           packages-dir: packages/va7-identity/dist/
+          password: ${{ secrets.PYPI_API_TOKEN }}
